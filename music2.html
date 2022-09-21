@@ -1,0 +1,111 @@
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"  crossorigin="anonymous">
+<style>
+body
+
+img
+{
+opacity:0.89;
+}
+
+.xyz
+{
+z-index:1;
+top:0;
+position:fixed;
+padding:30px;
+}
+
+.xyz a
+{
+text-decoration:none;
+font-size:20px;
+color:white;
+}
+
+.xyz span
+{
+color:white;
+position:absolute;
+top:0;
+right:0;
+}
+
+.sidenav
+{
+z-index:2;
+position:fixed;
+overflow-x:hidden;
+transition:0.5s;
+top:0;
+right:0;
+height:100%;
+width:0;
+background-color:black;
+
+}
+
+.sidenav a
+{
+display:block;
+padding: 20px;
+}
+
+.sidenav .closebutton
+{
+position:absolute;
+right:30px;
+top:0px;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="xyz">
+<div id="mohit" class="sidenav">
+<a href=javascript:void(0) class="closebutton" onclick="closeside()">&times;</a>
+<a href="https://music.apple.com/us/artist/mytunes/281940279">Home</a>
+<a href="file:///C:/HTML/music2.html">Overview</a>
+<a href="https://music.apple.com/us/listen-now">Music</a>
+<a href="https://music.apple.com/us/browse">Browse</a>
+<a href="https://tv.apple.com/">TV Shows</a>
+<a href="file:///C:/HTML/form.html">Login/Sign up</a>
+</div>
+
+<a href="https://music.apple.com/us/artist/mytunes/281940279">Home</a>
+<a href="file:///C:/HTML/music2.html" style="padding-left:50px;">Overview</a>
+<a href="https://music.apple.com/us/listen-now" style="padding-left:50px;">Music</a>
+<a href="https://music.apple.com/us/browse" style="padding-left:50px;">Browse</a>
+<a href="https://tv.apple.com/" style="padding-left:50px;">TV Shows</a>
+<a href="file:///C:/HTML/form.html" style="padding-left:50px;">Login/Sign up</a>
+<span onclick="openside()">&#9776;</span>
+
+<script>
+
+function openside()
+{
+document.getElementById("mohit").style.width="250px";
+}
+function closeside()
+{
+document.getElementById("mohit").style.width="0px";
+}
+
+</script>
+<center>
+<div>
+<h1 style="color:white; font-size: 60px; padding-top:50px;">myTunes</h1>
+<h2 style="color:white; font-size:40px; padding-top:40px;">Your music, movies, and TV shows take center stage.</h2>
+<p style="color:white; font-size:30px; padding-top:40px;">myTunes is the best way to organize and enjoy the music, movies, and TV shows you already have — and shop for
+                the ones you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+</div>
+</center>
+</div>
+
+<img style="height:100%; width:100%;" src = "C:\Users\Admin\Desktop\marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg">
+
+</body>
+</html>
